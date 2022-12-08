@@ -25,9 +25,8 @@ const App = () => {
                   color: "#fff",
                   display: "flex",
                   justifyContent: "center",
-                  minHeight: "100vh",
-                  width: "auto",
                   fontSize: "2rem",
+                  padding: "5rem 0",
                 }}
               >
                 Not Found | GO Back
