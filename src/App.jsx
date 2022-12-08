@@ -17,7 +17,20 @@ const App = () => {
           <Route path="/" element={<SecondHome />} />
           <Route path="/general" element={<GeneralCard />} />
           <Route path="/exam" element={<ExamCard />} />
-          <Route path="*" element={<div>Not Found | GO Back</div>} />
+          <Route
+            path="*"
+            element={
+              <div
+                style={{
+                  color: "#fff",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                Not Found | GO Back
+              </div>
+            }
+          />
         </Routes>
       </Router>
     </>
