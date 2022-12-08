@@ -1,0 +1,91 @@
+.mainContentCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goBack {
+  margin-top: 1rem;
+  padding: 2rem 0;
+}
+
+.goBack > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #ff949b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.containerOfCard {
+  padding: 0 25%;
+}
+
+.cardAll {
+  margin-top: 2rem;
+  padding: 1rem;
+  min-height: 20vh;
+  width: 100%;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.cardAll:last-child {
+  margin-bottom: 1.5rem;
+}
+.line {
+  width: 100%;
+  padding: 0.1px;
+  background-color: cyan;
+}
+.content > p {
+  font-size: 1.5rem;
+}
+.time {
+  font-size: 1.2rem;
+}
+
+.errorKey {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: cyan;
+  background: none;
+}
+@media (max-width: 769px) {
+  .containerOfCard {
+    padding: 0 5%;
+  }
+  .cardAll {
+    padding: 0.8rem;
+    width: 100%;
+    min-height: 25vh;
+  }
+}
+@media (max-width: 600px) {
+  .content > p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .cardAll {
+    min-height: 27vh;
+    justify-content: space-evenly;
+  }
+  .content > p {
+    font-size: 2rem;
+  }
+  .time {
+    font-size: 1.7rem;
+  }
+}

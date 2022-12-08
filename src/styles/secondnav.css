@@ -1,0 +1,119 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+}
+.containerBox {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mainBox {
+  margin: 1.5rem;
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  background: #13252f;
+  border: #fff 0.125em solid;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  animation: 3s ease-in 1s infinite reverse both running changeBorder;
+}
+@keyframes changeBorder {
+  0% {
+    border-color: hsl(317 100% 54%);
+  }
+  50% {
+    border-color: aqua;
+  }
+  75% {
+    border-color: aquamarine;
+  }
+  100% {
+    border-color: hsl(317 100% 54%);
+  }
+}
+.mainBox:hover,
+.mainBox:hover > p {
+  background: var(--clr-neon);
+  color: white;
+}
+.mainBox > p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: hsl(317 100% 54%);
+}
+.notiFication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notiFication > a > svg {
+  font-size: 1.5rem;
+  animation: 3s ease-in 1s infinite reverse both running change;
+}
+@keyframes change {
+  0% {
+    color: var(--clr-neon);
+  }
+  50% {
+    color: aqua;
+  }
+  75% {
+    color: aquamarine;
+  }
+  100% {
+    color: var(--clr-neon);
+  }
+}
+.notiFication > a {
+  cursor: pointer;
+  margin: 0 1rem;
+  padding: 0.5rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  border: 2px solid var(--clr-neon);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #ff949b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 3s ease-in 1s infinite reverse both running changeBorder;
+}
+.links {
+  margin-bottom: 1rem;
+}
+.links > a {
+  margin: 0 1rem;
+}
+.links > a > svg {
+  font-size: 1.9rem;
+  animation: 3s ease-in 1s infinite reverse both running change;
+}
+.colorFont2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+
+  background: linear-gradient(to left, #12c2e9, #c471ed, #ff949b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 600px) {
+  .mainBox {
+    width: auto;
+  }
+  .notiFication {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .colorFont2 {
+    font-size: 1.5rem;
+  }
+}
