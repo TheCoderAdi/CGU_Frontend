@@ -14,13 +14,13 @@ const ExamCard = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        "https://cgu-backend-jfqtsw4jt-thecoderadi.vercel.app/en"
+        "https://cgu-backend.vercel.app/en"
       );
       setGeneralNoti(data);
       setError(false);
       setLoading(false);
     } catch (error) {
-      setLoading(true);
+      setLoading(false);
       setError(true);
       setErrorMsg("Something Went Wrong | Please try again later");
     }
