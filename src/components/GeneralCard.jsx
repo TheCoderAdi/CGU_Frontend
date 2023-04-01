@@ -21,7 +21,7 @@ const GeneralCard = () => {
       setError(false);
       setLoading(false);
     } catch (error) {
-      setLoading(true);
+      setLoading(false);
       setError(true);
       setErrorMsg("Something Went Wrong | Please try again later");
     }
