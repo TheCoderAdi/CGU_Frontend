@@ -15,7 +15,7 @@ const GeneralCard = () => {
   const getData = async () => {
     try {
       const { data } = await axios.get(
-        "https://cgu-backend-jfqtsw4jt-thecoderadi.vercel.app/gn"
+        "https://cgu-backend.vercel.app/gn"
       );
       setGeneralNoti(data);
       setError(false);
